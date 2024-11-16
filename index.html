@@ -20,7 +20,20 @@
     <meta property="twitter:title" content="choose your favorite color" />
     <meta property="twitter:description" content="daily income" />
     <meta property="twitter:image" content="/meta-tag-img.png" />
-
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'spin-slow': 'spin 2s linear infinite',  
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class="bg-[#222]">
@@ -29,15 +42,18 @@
             <!-- Profile Card -->
             <div class=" w-full mx-auto bg-white lg:p-6 md:p-5 sm:p-4 p-2">
                 <!-- Profile Picture -->
-                <div
-                    class="flex justify-center mb-6 w-32 h-32 rounded-full border-4 border-blue-500 mx-auto overflow-hidden">
-                    <img src="./assets/img/png/profile-img.jpg" alt="User-Profile" class="overflow-hidden size-40">
-                </div>
+                <div class="relative flex justify-center items-center mb-6 mx-auto w-32 h-32">
+                    <div class="absolute w-full h-full border-4 border-transparent border-t-blue-500 rounded-full animate-spin"></div>
+                    <div class="relative w-[120px] h-[120px] rounded-full overflow-hidden bg-white">
+                      <img src="./assets/img/png/profile-img.jpg" alt="User-Profile" class="w-full h-full object-cover">
+                    </div>
+                  </div>
+                  
 
                 <!-- User Info -->
                 <div class="text-center">
                     <h1 class="text-3xl font-bold text-gray-900 lg:mb-3 mb-2">Chinnu JAAT</h1>
-                    <p class="text-lg text-gray-600">Contact Me for Game Coaching</p>
+                    <p class="text-lg text-gray-600">Contact Me for Game Coaching </p>
                     <p class="mt-2 text-gray-500">"Step up your game at your own pace - access my comprehensive
                         tutorials and become a pro!"</p>
                 </div>
@@ -72,7 +88,7 @@
 
                     <!-- Telephone Link -->
                     <div class="lg:w-4/12 md:w-6/12 w-full px-3 py-3">
-                        <a href="tel:+9728495716" target="_blank">
+                        <a href="tel:+919728495716" target="_blank">
                             <div
                                 class=" bg-blue-700 py-1 rounded-md flex items-center w-full justify-center hover:scale-[1.02] duration-300 ease-linear">
                                 <p
@@ -124,11 +140,13 @@
 
                 </div>
 
-                <h2 class="mx-auto w-full lg:text-4xl md:text-3xl text-2xl max-w-md text-center text-[#4c4c4c] lg:mb-10 md:mb-4 mb-3">
+                <h2
+                    class="mx-auto w-full lg:text-4xl md:text-3xl text-2xl max-w-md text-center text-[#4c4c4c] lg:mb-10 md:mb-4 mb-3">
                     TELEGRAM GROUP
                     LINK🎮</h2>
+
                 <div class="bg-gray-400 max-w-max mx-auto md:mb-10 mb-12 px-2 py-3 rounded-md">
-                        <div class="w-full max-w-sm px-3 flex  mb-5 mx-auto text-center">
+                    <div class="w-full max-w-sm px-3 flex  mb-5 mx-auto text-center">
                         <a class="lg:text-xl md:text-lg text-sm w-full flex justify-start items-center bg-transparent rounded-md overflow-hidden gap-3 max-w-sm underline underline-offset-2 decoration-[#1a0dab]"
                             href="https://t.me/+ud5A_mxjYsRkNjdl" target="_blank">
                             <img class="size-7"
@@ -150,7 +168,9 @@
                         </a>
                     </div>
                 </div>
-                <h2 class="mx-auto w-full lg:text-4xl md:text-3xl text-2xl max-w-md text-center text-[#4c4c4c] lg:mb-10 md:mb-4 mb-3">
+
+                <h2
+                    class="mx-auto w-full lg:text-4xl md:text-3xl text-2xl max-w-md text-center text-[#4c4c4c] lg:mb-10 md:mb-4 mb-3">
                     REGISTER NOW
                     👇👇🎮</h2>
 
@@ -164,8 +184,7 @@
                             Resister Now
                         </a>
                     </div>
-                    <div
-                        class="lg:w-3/12 md:w-6/12 w-full  px-3 flex justify-start items-center flex-col mb-5">
+                    <div class="lg:w-3/12 md:w-6/12 w-full  px-3 flex justify-start items-center flex-col mb-5">
                         <h2
                             class="lg:text-xl md:text-lg text-base bg-blue-500 lg:px-3 px-2 rounded-md mb-2 w-full max-md:max-w-xs max-sm:max-w-[220px] mx-auto text-center">
                             DIU
@@ -198,6 +217,7 @@
                             Now</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
