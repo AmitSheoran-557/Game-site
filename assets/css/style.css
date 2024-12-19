@@ -3,6 +3,9 @@
     font-family: "Roboto", sans-serif;
 }
 
-.mobile-img{
+/* .mobile-img{
     filter: drop-shadow(4px 4px 10px lightblue);
-}
+} */
+ .bg-img-profile{
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP._4WzN2XrFVERCzKcZC_0kAHaDK&pid=Api&P=0&h=220');
+ }
